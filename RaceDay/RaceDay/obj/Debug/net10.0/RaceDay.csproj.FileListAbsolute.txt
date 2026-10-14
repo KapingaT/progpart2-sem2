@@ -1,0 +1,5 @@
+C:\Users\HP\source\repos\RaceDay\RaceDay\obj\Debug\net10.0\RaceDay.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\RaceDay\RaceDay\obj\Debug\net10.0\RaceDay.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\source\repos\RaceDay\RaceDay\obj\Debug\net10.0\RaceDay.AssemblyInfoInputs.cache
+C:\Users\HP\source\repos\RaceDay\RaceDay\obj\Debug\net10.0\RaceDay.AssemblyInfo.cs
+C:\Users\HP\source\repos\RaceDay\RaceDay\obj\Debug\net10.0\RaceDay.csproj.CoreCompileInputs.cache
