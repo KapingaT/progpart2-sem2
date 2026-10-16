@@ -42,7 +42,9 @@ The project demonstrates a clean layered architecture with a strong emphasis on 
 - Full xUnit test suite using the **EF Core InMemory** provider
 - Tests cover password hashing, role assignment, enrollment relationships, and event persistence
 
----
+<img width="1366" height="728" alt="image" src="https://github.com/user-attachments/assets/4d1949f6-9af5-43b2-9270-0fbce1ba61f5" />
+
+<img width="1366" height="728" alt="image" src="https://github.com/user-attachments/assets/c4dae7ea-7ca7-4324-baae-bc959722b55e" />
 
 
-The project follows a classic layered architecture:
+
