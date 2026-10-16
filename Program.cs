@@ -1,15 +1,16 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using RaceDay.Data;
-using RaceDayAPI.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // 1. Database
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-
-// 2. Session management (for login state)
+ options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+// 2. Session management
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
 {
@@ -27,7 +28,6 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configure pipeline
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -35,11 +35,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
-// IMPORTANT: Session must come BEFORE Authorization
-app.UseSession();
+app.UseSession();       // must come before Authorization
 app.UseAuthorization();
-
 app.MapControllers();
 
 app.Run();
