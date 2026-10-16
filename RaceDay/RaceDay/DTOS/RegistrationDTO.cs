@@ -4,7 +4,7 @@ using System.Text;
 
 namespace RaceDay.DTOS
 {
-    internal class RegistrationDTO
+    public class RegistrationDTO
     {
         public string FullName { get; set; } = string.Empty;
         public string Email { get; set; } = string.Empty;

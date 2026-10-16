@@ -1,7 +1,8 @@
-﻿
+﻿using System;
+
 namespace RaceDay.DTOS
 {
-    public class EventDTO
+    public class EventDTO  
     {
         public string Name { get; set; } = string.Empty;
         public string Description { get; set; } = string.Empty;
