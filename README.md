@@ -2,25 +2,6 @@
 
 A RESTful Web API for managing running, walking, and cycling events — built with **ASP.NET Core**, **Entity Framework Core**, and **SQL Server**. Organisers create events and categories; participants enroll and receive results.
 
-![.NET](https://img.shields.io/badge/.NET-10.0-purple)
-![EF Core](https://img.shields.io/badge/EF%20Core-10.0-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
-
----
-
-## 📋 Table of Contents
-
-- [Overview](#-overview)
-- [Features](#-features)
-- [Tech Stack](#-tech-stack)
-- [Architecture](#-architecture)
-- [Project Structure](#-project-structure)
-- [Getting Started](#-getting-started)
-- [API Endpoints](#-api-endpoints)
-- [Testing](#-testing)
-- [Design Decisions](#-design-decisions)
-- [Known Limitations](#-known-limitations)
-- [Author](#-author)
 
 ---
 
