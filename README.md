@@ -47,4 +47,5 @@ The project demonstrates a clean layered architecture with a strong emphasis on 
 <img width="1366" height="728" alt="image" src="https://github.com/user-attachments/assets/c4dae7ea-7ca7-4324-baae-bc959722b55e" />
 
 
+https://youtu.be/RS8pq9bERNk
 
