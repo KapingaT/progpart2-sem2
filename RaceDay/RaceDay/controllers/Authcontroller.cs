@@ -27,7 +27,7 @@ namespace RaceDay.controllers
         /// Registers a new user (Organiser or Participant).
         /// </summary>
         [HttpPost("register")]
-        public async Task<IActionResult> Register(RegisterDto request)
+        public async Task<IActionResult> Register(RegisterationDto request)
         {
             if (await _context.Users.AnyAsync(u => u.Email == request.Email))
                 return BadRequest("Email already in use.");

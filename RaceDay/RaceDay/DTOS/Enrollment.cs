@@ -2,9 +2,12 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace RaceDay.DTOS
-{
-    internal class Enrollment
+
+    namespace RaceDay.DTOs
     {
+        public class EnrollmentDto
+        {
+            public int EventId { get; set; }
+            public int CategoryId { get; set; }
+        }
     }
-}
