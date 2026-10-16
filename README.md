@@ -1,0 +1,82 @@
+# 🏃 RaceDay
+
+A RESTful Web API for managing running, walking, and cycling events — built with **ASP.NET Core**, **Entity Framework Core**, and **SQL Server**. Organisers create events and categories; participants enroll and receive results.
+
+![.NET](https://img.shields.io/badge/.NET-10.0-purple)
+![EF Core](https://img.shields.io/badge/EF%20Core-10.0-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+
+---
+
+## 📋 Table of Contents
+
+- [Overview](#-overview)
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [Architecture](#-architecture)
+- [Project Structure](#-project-structure)
+- [Getting Started](#-getting-started)
+- [API Endpoints](#-api-endpoints)
+- [Testing](#-testing)
+- [Design Decisions](#-design-decisions)
+- [Known Limitations](#-known-limitations)
+- [Author](#-author)
+
+---
+
+## 📖 Overview
+
+**RaceDay** is a backend API that lets:
+
+- **Organisers** create events (races, walks, rides), add categories (e.g. Senior, Junior), and capture participants' finish times and positions.
+- **Participants** browse events, enroll in categories, and view their own race results.
+
+The project demonstrates a clean layered architecture with a strong emphasis on **testability** — every layer can be tested in isolation using an in-memory database.
+
+---
+
+## ✨ Features
+
+### Authentication
+- User registration with role selection (Organiser or Participant)
+- Login with session-based authentication
+- Passwords hashed with **BCrypt** (never stored in plain text)
+- Logout clears session
+
+### Events
+- Public listing of all events (authenticated users)
+- Full CRUD for Organisers (Create, Read, Update, Delete)
+- Ownership validation — only the Organiser who created an event can edit/delete it
+
+### Categories
+- Organisers define categories per event (e.g. "Senior", "Junior", "Open")
+- Public read access for authenticated users
+
+### Enrollments & Results
+- Participants enroll into events with a specific category
+- Organisers record finish times and positions
+- Participants view their own results
+
+### Testing
+- Full xUnit test suite using the **EF Core InMemory** provider
+- Tests cover password hashing, role assignment, enrollment relationships, and event persistence
+
+---
+
+## 🛠 Tech Stack
+
+| Layer | Technology |
+|-------|------------|
+| **Framework** | ASP.NET Core 10 Web API |
+| **ORM** | Entity Framework Core 10 |
+| **Database** | SQL Server (LocalDB for development) |
+| **Authentication** | Session-based + BCrypt password hashing |
+| **API Docs** | Swagger / OpenAPI |
+| **Testing** | xUnit + EF Core InMemory provider |
+| **Language** | C# 13 |
+
+---
+
+## 🏛 Architecture
+
+The project follows a classic layered architecture:
