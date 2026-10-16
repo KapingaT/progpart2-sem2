@@ -1,13 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-
+using System.ComponentModel.DataAnnotations;
 namespace RaceDay.Models
 {
-    using System.ComponentModel.DataAnnotations;
-
-    namespace RaceDayAPI.Models
-    {
         public class User
         {
             [Key]// used to indicate primary keys 
@@ -34,4 +30,4 @@ namespace RaceDay.Models
             //event is the thing being stored 
         }
     } 
-}
+

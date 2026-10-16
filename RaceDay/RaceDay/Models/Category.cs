@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿ using System.ComponentModel.DataAnnotations;
 
-namespace RaceDay.Models
-{
-    using System.ComponentModel.DataAnnotations;
-
-    namespace RaceDayAPI.Models
+    namespace RaceDay.Models
     {
         public class Category
         {
@@ -23,7 +17,7 @@ namespace RaceDay.Models
             public Event? Event { get; set; }
 
             // Navigation
-            public ICollection<Enrollment> Enrollment { get; set; } = new List<Enrollment>();
+            public ICollection<Enrollment> Enrollments { get; set; } = new List<Enrollment>();
         }
     }
-}
+

@@ -4,7 +4,10 @@ using System.Text;
 
 namespace RaceDay.DTOS
 {
-    internal class ResultsDTO
+    public class ResultDto
     {
+        public int EnrollmentId { get; set; }
+        public string FinishTime { get; set; } = string.Empty;
+        public int Position { get; set; }
     }
 }
