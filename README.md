@@ -1,11 +1,11 @@
-# 🏃 RaceDay
+#  RaceDay
 
 A RESTful Web API for managing running, walking, and cycling events — built with **ASP.NET Core**, **Entity Framework Core**, and **SQL Server**. Organisers create events and categories; participants enroll and receive results.
 
 
 ---
 
-## 📖 Overview
+##  Overview
 
 **RaceDay** is a backend API that lets:
 
@@ -16,7 +16,7 @@ The project demonstrates a clean layered architecture with a strong emphasis on 
 
 ---
 
-## ✨ Features
+## Features
 
 ### Authentication
 - User registration with role selection (Organiser or Participant)
@@ -44,20 +44,5 @@ The project demonstrates a clean layered architecture with a strong emphasis on 
 
 ---
 
-## 🛠 Tech Stack
-
-| Layer | Technology |
-|-------|------------|
-| **Framework** | ASP.NET Core 10 Web API |
-| **ORM** | Entity Framework Core 10 |
-| **Database** | SQL Server (LocalDB for development) |
-| **Authentication** | Session-based + BCrypt password hashing |
-| **API Docs** | Swagger / OpenAPI |
-| **Testing** | xUnit + EF Core InMemory provider |
-| **Language** | C# 13 |
-
----
-
-## 🏛 Architecture
 
 The project follows a classic layered architecture:
