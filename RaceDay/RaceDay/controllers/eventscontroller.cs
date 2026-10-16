@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
+﻿
     using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Http;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.EntityFrameworkCore;
-    using RaceDay.DTOS;
     using RaceDay.Models;
     using RaceDay.Data;
+    using RaceDay.DTOS;
   
     namespace RaceDay.controllers
     {
@@ -69,7 +66,7 @@ using System.Text;
             /// </summary>
             [HttpPost]
             [Authorize(Roles = "Organiser")]
-            public async Task<IActionResult> Create(EventDto request)
+            public async Task<IActionResult> Create(EventDTO request)
             {
                 var userId = HttpContext.Session.GetInt32("UserId");
                 if (userId == null) return Unauthorized();
@@ -96,7 +93,7 @@ using System.Text;
             /// </summary>
             [HttpPut("{id}")]
             [Authorize(Roles = "Organiser")]
-            public async Task<IActionResult> Update(int id, EventDto request)
+            public async Task<IActionResult> Update(int id, EventDTO request)
             {
                 var userId = HttpContext.Session.GetInt32("UserId");
                 var ev = await _context.Events.FindAsync(id);

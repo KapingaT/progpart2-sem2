@@ -3,6 +3,7 @@
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.EntityFrameworkCore;
     using RaceDay.DTOS;
+    using RaceDay.Data;
     using RaceDay.Models;
     
     namespace RaceDay.controllers

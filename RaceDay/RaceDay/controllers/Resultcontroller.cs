@@ -7,6 +7,7 @@ using System.Text;
     using Microsoft.AspNetCore.Http;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.EntityFrameworkCore;
+    using RaceDay.Data;
     using RaceDay.DTOS;
     
 
